@@ -26,16 +26,16 @@ function init() {
     scene = new THREE.Scene();
 
 
-    var geometry = [new THREE.SphereGeometry( 20, 900, 900), 
-        new THREE.SphereGeometry( 5, 900, 900),
-        new THREE.SphereGeometry( 200, 900, 900),
-        new THREE.SphereGeometry( 15, 900, 900),
-        new THREE.SphereGeometry( 30, 900, 900),
-        new THREE.SphereGeometry( 100, 900, 900),
-        new THREE.SphereGeometry( 32, 900, 900),
-        new THREE.SphereGeometry( 9, 900, 900),
-        new THREE.SphereGeometry( 69, 900, 900),
-        new THREE.SphereGeometry( 9, 900, 900),
+    var geometry = [new THREE.SphereGeometry( 20, 15, 15), 
+        new THREE.SphereGeometry( 5, 15, 15),
+        new THREE.SphereGeometry( 200, 15, 15),
+        new THREE.SphereGeometry( 15, 15, 15),
+        new THREE.SphereGeometry( 30, 15, 15),
+        new THREE.SphereGeometry( 100, 15, 15),
+        new THREE.SphereGeometry( 32, 15, 15),
+        new THREE.SphereGeometry( 9, 15, 15),
+        new THREE.SphereGeometry( 69, 15, 15),
+        new THREE.SphereGeometry( 9, 15, 15),
     ]
 
     var materials = [
