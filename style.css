@@ -1,0 +1,368 @@
+html, body {
+    width:100%;
+    height:100%;
+    background:#000;
+    position:relative;
+    white-space: nowrap;
+    font-family: 'Fira Code', monospace;
+
+  }
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+.main{
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+  .name{
+
+    line-height: 90px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: calc(70%/2);
+    width: 30%;
+    color: white;
+    font-size: 6rem;
+     
+    
+  }
+
+  .smaller{
+
+    line-height: 75px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: calc(70%/2);
+    width: 30%;
+    color: white;
+    font-size: 4.5rem;
+    transform: scale(1, 1);
+    transition: 0.5s ease-in-out;
+  }
+
+  .nav-selections {
+    font-size: 2.25rem;
+    color: white;
+
+    position: absolute;
+  }
+
+  .projTitle{
+    left: 33%;
+    top: 35%;
+    transform: scale(0, 0);
+  }
+  .contactTitle{
+    right: 33%;
+    top: 35%;
+    transform: scale(0, 0);
+  }
+  .comeInContactTitle{
+    right: 33%;
+    top: 35%;
+    transform: scale(1, 1);
+    transition: 0.5s ease-in-out;
+  }
+
+  .comeInprojTitle{
+    left: 33%;
+    top: 35%;
+    transform: scale(1, 1);
+    transition: 0.5s ease-in-out;
+  }
+
+
+  /* @keyframes shake2 { from { right: 32.75%; } 50% { right: 33.25%; } to { right: 32.75%; } }
+  @keyframes shake1 { from { left: 32.75%; } 50% { left: 33.25%; } to { left: 32.75%; } }
+  @keyframes shake3 { from { left: 1%; } 50% { left: .5%; } to { left: 0%; } }
+  .shake1{
+    animation: shake1 2s infinite;
+  }
+  .shake2{
+    animation: shake2 2s infinite;
+  }
+
+  .shake3{
+    animation: shake3 2s infinite;
+  } */
+
+
+.hyper{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+#projects{
+  position: absolute; 
+  width: 100%;
+  height: 85%;
+  top: 80%;
+  display: flex;
+}  
+#projects div{
+  width: calc(90%/3);
+  background-color: green;
+  margin: calc(10%/6);
+  height: calc(90%/3);
+}
+#projects div button{
+  width: 100%;
+  height: 100%;
+}
+#projects div button img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.TTT{
+  position: absolute; 
+  width: 85%;
+  height: 65%;
+  top: 105%;
+  display: flex;
+  background-color: yellow;
+  left: calc(15%/2);
+}  
+
+.RESET{
+  left: .2%;
+  top: .2%;
+  width: 5%;
+  height: 7.5%;
+  justify-content: center;
+  position: absolute;
+
+}
+
+.close{
+  right: .2%;
+  top: .2%;
+  background-color: red;
+  width: 5%;
+  height: 7.5%;
+  justify-content: center;
+  position: absolute;
+
+}
+
+
+.TTT{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#player{
+  left: 50%;
+  position: absolute;
+  }
+
+.TTT div{
+    border: black 3px solid;
+    width: 27.5%;
+    margin: 2.5%;
+    height: 20%;
+
+}
+.TTT div button{
+    width: 100%;
+    height: 100%;
+    background-color: #cccccc;
+}
+.TTT div button p{
+  font-size: 30px;
+}
+
+.cover{
+  background-color: black;
+  height: 110%;
+  width: 110%;
+  left: -10%;
+  top: -10%;
+  position: absolute;
+}
+
+.about{
+  position: absolute; 
+  width: 95%;
+  height: 65%;
+  top: 75%;
+  background-color: gray;
+  left: 2.5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1.25em;
+  opacity: .85;
+
+}  
+.about h1{
+  left: 5%;
+  position: absolute;
+  opacity: 1;
+}
+.about img{
+  height: 92.3%;
+  top: 2.5%;
+  right: 5%;
+  position: absolute;
+  opacity: 1;
+}
+
+.bioHolder{
+  width: 50%;
+  height: 60%;
+  top: 10%;
+  left: 2.5%;
+  position: absolute;
+  display: inline;
+  opacity: 1;
+}
+
+
+
+.contact{
+  position: absolute; 
+  width: 95%;
+  height: 65%;
+  top: 75%;
+  background-color: gray;
+  left: 2.5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  opacity: .6;
+}
+#social{
+  left: 60%;
+  height: 100%;
+  width: 40%;
+  background-color: gray;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+
+}
+#social div{
+left: 25%;
+width: 50%;
+height: 10%;
+margin-left: 25%;
+margin-top: 7.5%;
+}
+#social p{
+  margin-left: 30%;
+  font-size: 3rem;
+}
+#social img{
+  height: 100%;
+}
+
+.emailBox{
+  height: 25%;
+  width: 50%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: turquoise;
+}
+
+
+
+
+.bioHolder{
+  top: 12%;
+  left: 2.5%;
+  font-size: 1em;
+  position: absolute;
+}  
+.about{
+  left: 4%;
+}
+.about span{
+  font-weight: 700;
+}
+.achieve{
+  position: absolute;
+  top: 50%;
+  left: 2.5%;
+
+}
+.achievements h1{
+  top: 42.5%;
+  left: 4%;
+}
+.prgrm{
+  position: absolute;
+  top: 100%;
+  left: 2.5%;
+
+}
+
+
+
+
+.contactSectTitle{
+  position: absolute;
+  left: 2.5%;
+  top: 5%;
+}
+
+.emailName{
+  left: 1.5%;
+  position: absolute;
+  top: 20%;
+}
+.nameMsg{
+  left: 1.5%;
+  position: absolute;
+  top: 40;
+  width: 1000%;
+  height: 300%;
+}
+
+.Email{
+  left: 1.5%;
+  position: absolute;
+  top:  35%;
+}
+.address{
+  left: 1.5%;
+  position: absolute;
+  top: 40;
+  width: 1000%;
+  height: 300%;
+}
+.emailContents{
+  left: 1.5%;
+  position: absolute;
+  top:  50%;
+}
+.emailcontentsbox{
+  left: 1.5%;
+  position: absolute;
+  top: 40;
+  width: 1200%;
+  height: 600%;
+}
+.formSubmit{
+  top: 75%;
+  width: 25%;
+  left: 7.5%;
+  position: absolute;
+  height: 10%;
+}
