@@ -156,6 +156,7 @@ width: 30%;
 margin: calc(10%/3);
 height: 60%;
 background-color: gray;
+opacity: .85;
 
 }
 #projects div button{
