@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="icon" type="image/png" sizes="32x32" href="imgs/ethanfavi.png">
         <title>ethan</title>
         <link rel="stylesheet" href="style.css">
         <meta charset="utf-8">
@@ -27,8 +28,10 @@
         <div class="hyper">
         <!-- hyperlinks-->
         <nav class="navBar">
-            <h2 class="projTitle nav-selections shake1 projectBroke">projects</h2>
-            <h2 class="contactTitle nav-selections shake2 contactBroke">contact</h2>
+            <h2 class="projTitle nav-selections projectBroke">projects</h2>
+            <h2 class="contactTitle nav-selections contactBroke">contact</h2>
+            <h2 class="aboutTitle nav-selections aboutBroke">about</h2>
+            <h2 class="certTitle nav-selections certBroke">skills</h2>
         </nav>
         <!-- hyperlinks-->
 
@@ -45,20 +48,36 @@
 <!--project section-->
         <div id="projects"> <!-- change out img to local-->
             <div class="project"><button class="TTTshow"><!--Tic Tac Toe-->
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/1200px-Tic_tac_toe.svg.png" alt="tictactoe">
+                <img src="IMGS/tictacatoe.png" alt="tictactoe">
 
             </button>
-        </div><!--Tic Tac Toe-->
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
+        </div>
+            <div class="project">
+                <button class="RPSshow"><!--rock papper scissors-->
+                    <img src="imgs/rpsCover.png" alt="rps">
+
+            </div>
+            <div class="project weather">
+                <button class="weatherButt">
+                <h3>Press To Get Weather</h3>
+            </button>
+
+            </div>
+
+        </div>
+
+        <div class="RPSgame">
+            <button class="close"> <p>X</p></button>
+            <span class="gameManager"></span>
+            <div class="rock"><img src="imgs/rock - Copy.jpg" alt="roick"></div>
+            <div class="paper"><img src="imgs/PAPER.jpg" alt="apper"></div>
+            <div class="scissors"><img src="imgs/scissors.jpg" alt="scissors"></div>
         </div>
 
         <div class="TTT"><!--Tic Tac Toe-->
             <button class="close"> <p>X</p></button>
             <button class="RESET"> <p>RESET</p></button>
-            <span id="player"></span>
+            <span class="gameManager"></span>
             <div><button class="TTTbutt" id="square1"><p id="s1"></p></button></div>
             <div><button class="TTTbutt" id="square2"><p id="s2"></p></button></div>
             <div><button class="TTTbutt" id="square3"><p id="s3"></p></button></div>
@@ -78,16 +97,21 @@
 
         <div class="contact">
             
-            <h1 class="contactSectTitle">Connect With Me</h1>
+            <h1 class="contactSectTitle">CONNECT WITH ME</h1>
 
 
 
             <div id="social">
-                <div class="twitter"><a href="https://github.com/ethant2021" rel="noopener noreferrer" target="_blank"><img src="imgs/GITHUB.png" alt="github"><p>@ethant2021</p></a></div>
-                <div class="linked"><a href="https://www.linkedin.com/in/ethan-thackery-a22bb71b1/" rel="noopener noreferrer" target="_blank"><img src="imgs/LINKED IN.jpg" alt="linkedin"><p>@Ethan Thackery</p></a></div>
-                <div class="insta"><a href="https://www.instagram.com/ethant2021/" rel="noopener noreferrer" target="_blank"><img src="imgs/INSTA.png" alt=""><p>@ethant2021</p></a></div>
-                <div class=""><a href="https://twitter.com/EthanThackery" rel="noopener noreferrer" target="_blank"><img src="imgs/twitter.jpg" alt=""><p>@EthanThackery</p></a></div>
-                <div class=""><a href="https://docs.google.com/document/d/1yJGw-MMnpwt0eY3GYyS9_zc436b-grITZwujDvI-jdY/edit?usp=sharing" rel="noopener noreferrer" target="_blank"><img src="imgs/docs.png" alt=""><p>Resume</p></a></div>
+                <div><a href="https://github.com/ethant2021" rel="noopener noreferrer" target="_blank"><img src="imgs/GITHUB.png" alt="github">
+                    <p class="git">@ethant2021</p></a></div>
+                <div><a href="https://www.linkedin.com/in/ethan-thackery-a22bb71b1/" rel="noopener noreferrer" target="_blank"><img src="imgs/LINKED IN.png" alt="linkedin">
+                    <p class="linked">@Ethan Thackery</p></a></div>
+                <div><a href="https://www.instagram.com/ethant2021/" rel="noopener noreferrer" target="_blank"><img src="imgs/INSTA.png" alt="">
+                    <p class="insta">@ethant2021</p></a></div>
+                <div><a href="https://twitter.com/EthanThackery" rel="noopener noreferrer" target="_blank"><img src="imgs/twitter.png" alt="">
+                    <p class="twitt">@EthanThackery</p></a></div>
+                <div><a href="https://docs.google.com/document/d/1yJGw-MMnpwt0eY3GYyS9_zc436b-grITZwujDvI-jdY/edit?usp=sharing" rel="noopener noreferrer" target="_blank"><img src="imgs/docs.png" alt="">
+                    <p class="resume">Resume</p></a></div>
             </div>
             
 
@@ -101,15 +125,15 @@
                         >
                         <label class="Email">
                             Email:
-                            <input class="address" type="email" name="_replyto">
+                            <input class="address" type="email" name="_replyto" placeholder="Email">
                         </label>
                         <label class="emailName">
                             Name:
-                            <textarea class="nameMsg" name="message">Name</textarea>
+                            <input class="nameMsg" name="message" type="text" placeholder="Name">
                         </label>
                         <label class="emailContents">
                             Message:
-                            <textarea class="emailcontentsbox" name="message">message</textarea>
+                            <textarea class="emailcontentsbox" name="message" placeholder="Write me anything."></textarea>
                         </label>
 
                         <!-- your other form fields go here -->
@@ -121,39 +145,71 @@
         </div>
 
         <div class="about">
-            <div class="container">
+            
             <h1>ABOUT</h1>
             <div class="bioHolder">
-                <p><span>My name is Ethan Thackery</span>, and I’m a freshman studying Computer Information Technology at Purdue University.
-                   <br> <span>I love to solve problems.</span>  Whether it’s finding the most elegant way to write a line of code<br> or the best practice to implement<br> a new feature or design element, I love the challenge of finding a way and discovering solutions. <br>
-                <span>I am passionate about technology.</span> Whether it be engineering creating physical things, or it is<br> developing a new program to <br>solve problems. 
-                <span>I am a leader.</span> Naturally I am a very shy, introverted person, however<br> I have worked towards overcoming this,<br> and presenting myself as a leader.<br> 
+                <p>
+                    <ul><li><span>My name is Ethan Thackery</span>, and I’m a freshman studying Computer Information Technology at Purdue University. 
+                    </li><li><span>I love to solve problems.</span>  Whether it’s finding the most elegant way to write a line of code 
+                    or the  best practice to implement a new feature or design element,  I love the challenge of finding a way  and
+                    discovering solutions. 
+                </li><li><span>I am passionate about technology.</span> Whether it be engineering creating physical things, or it is 
+                 developing a new program to solve problems. 
+                </li><li> <span>I am a leader.</span> Naturally I am a very shy,  introverted person, however I have worked towards 
+                overcoming this, and presenting myself as a leader.</li>  
+            </ul>
             </p>
             </div>
-            <div class="achievements">
-                <h1>ACCOMPLISHMENTS & QUALIFICATIONS</h1>
-                <ul class="achieve">
-                    <li>Graduated with 3 Honors Diplomas</li>
-                    <li>Local IT Business Owner</li>
-                    <li>3x Years IT Department Experience</li>
-                    <li>Former Technology Student Association State Officer</li>
-                    <li>7x Years VEX Robotics Experience</li>
-                    <li>Microsoft Office Certified</li>
-                    <li>Programming Experience in
-                    <ul class="prgrm">
-                        <li>C# Automation & Mobile Development</li>
-                        <li>Java</li>
-                        <li>Javascript, and multiple libraries</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </li>   
-                </ul>
-            </div>
+
+
             <img src="imgs/Ethan1cropped.jpg" alt="ethan">
-        </div>
+        
         </div>
 
+
+
+        <div class="certs">
+            <h1>SKILLS</h1>
+            <div class="languages">
+                <ul>
+                    <li class="title">Languages</li>
+                    <li> C# </li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+            <div class="libs">
+                <ul>
+                    <li class="title">Libraries</li>
+                    <li>Selenium</li>
+                    <li>TestStack White</li>
+                    <li>Three.js</li>
+                    <li>JQuery</li>
+                    <li>Xamarin Forms</li>
+                </ul>
+            </div>
+            <div class="altSkills">
+                <ul>
+                    <li class="title">Software</li>
+                    <li>Autodesk 3D CAD</li>
+                    <li>Microsoft Certified</li>
+                    <li>Sony Vegas</li>
+                </ul>
+
+            </div>
+            <div class="miscExp">
+            <ul>
+                <li class="title">Experience</li>
+                <li>3x Years IT Department</li>
+                <li>3x Honors Diplomas</li>
+                <li>7x Years VEX Robotics</li>
+                <li>TSA State Officer</li>
+            </ul>
+            </div>
+        </div>
 
 
 
@@ -170,6 +226,8 @@
         <script src="javascript/jsPanel.js"></script>
         <script src="javascript/tic tac toe.js"></script>
         <script src="javascript/mainCycle.js"></script>
+        <script src="javascript/rockpaper.js"></script>
+        <script src="javascript/weatherAPI.js"></script>
 
 
     </div>

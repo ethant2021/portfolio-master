@@ -1,6 +1,8 @@
 let ethan = document.querySelector('.name');
 let projects = document.querySelector('.projTitle');
 let contacts = document.querySelector('.contactTitle');
+let cert = document.querySelector('.certTitle');
+let about = document.querySelector('.aboutTitle');
 
 let anim = [
 
@@ -55,8 +57,9 @@ let update = () => {
     else {
         ethan.classList.add('smaller');
         ethan.classList.remove('name');
-        setTimeout(change2, 1000);
-        setTimeout(change, 500);
+    altSolution();
+    altSolution2();
+
         $(".cover").hide(1500);
         $(".about").show(2000);
 
@@ -74,3 +77,23 @@ function change2(){
 contacts.classList.add('comeInContactTitle');
 contacts.classList.remove('contactTitle');
 }
+
+function change3(){
+    cert.classList.add('comeInCertTitle');
+    cert.classList.remove('certTitle');
+    }
+
+
+    function change4(){
+        about.classList.add('comeInaboutTitle');
+        about.classList.remove('aboutTitle');
+        }
+
+        function altSolution (){
+            setTimeout(change, 1000);
+            setTimeout(change3, 2000);
+        }
+        function altSolution2 (){
+            setTimeout(change4, 500);
+            setTimeout(change2, 1500);
+        }

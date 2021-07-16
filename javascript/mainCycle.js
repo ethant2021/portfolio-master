@@ -3,9 +3,11 @@ $("").ready(function(){
     $("#projects").hide();
     $(".contact").hide();
     $(".about").hide();
+    $(".certs").hide();
     let projclicked = 0; 
     let conclicked = 0; 
     let aboutClicked = 0; 
+    let aboutTabClicked = 0; 
 
     $(".projTitle").click(function(){
     
@@ -13,11 +15,12 @@ $("").ready(function(){
         $("#projects").show(350);
         $(".contact").hide(350);
         $(".about").hide(350);
+        $(".certs").hide(350);
 
       }
       else
       {
-        $("#projects").hide();
+        $("#projects").hide(350);
       }
       projclicked++;
     });
@@ -28,10 +31,11 @@ $("").ready(function(){
             $(".contact").show(350);
             $("#projects").hide(350);
             $(".about").hide(350);
+            $(".certs").hide(350);
           }
           else
           {
-            $(".contact").hide();
+            $(".contact").hide(350);
           }
           conclicked++;
         });
@@ -42,6 +46,7 @@ $("").ready(function(){
                 $(".about").show(350);
                 $(".contact").hide(350);
                 $("#projects").hide(350);
+                $(".certs").hide(350);
               }
               else
               {
@@ -51,8 +56,36 @@ $("").ready(function(){
             });
     
 
-
-
+            $(".aboutBroke").click(function(){
+    
+              if(aboutTabClicked % 2 == 0){
+                $(".about").show(350);
+                $(".contact").hide(350);
+                $("#projects").hide(350);
+                $(".certs").hide(350);
+                }
+                else
+                {
+                  $(".about").hide(350);
+                }
+                aboutTabClicked++;
+              });
+      
+              $(".certBroke").click(function(){
+    
+                if(aboutTabClicked % 2 == 0){
+                    $(".certs").show(350);
+                    $("#projects").hide(350);
+                    $(".about").hide(350);
+                    $(".contact").hide(350);
+                  }
+                  else
+                  {
+                    $(".certs").hide(350);
+                  }
+                  aboutTabClicked++;
+                });
+        
 
 
 

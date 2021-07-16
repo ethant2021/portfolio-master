@@ -1,7 +1,7 @@
 
 $("").ready(function(){ 
 $(".TTT").hide();
-
+$(".RPSgame").hide();
 
 
 $(".TTTshow").click(function(){
@@ -10,12 +10,22 @@ $(".TTTshow").click(function(){
 
 });
 
+$(".RPSshow").click(function(){
+    
+    $(".RPSgame").show();
+
+});
 
 $(".close").click(function(){
     
     $(".TTT").hide();
+    $(".RPSgame").hide();
 
 });
+
+
+
+
 
 
 

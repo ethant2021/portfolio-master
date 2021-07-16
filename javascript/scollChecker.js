@@ -13,11 +13,11 @@ $(window).scroll(function(e){
     console.log($(this).scrollTop());
     if ($(this).scrollTop() > smallerHeight && !isPositionFixed){ 
       $el.css({'position': 'fixed', 'top': '-20px'}); 
-      $el.css({'left': '25%'}); 
+      $el.css({'left': '20%'}); 
     }
     if ($(this).scrollTop() < smallerHeight && isPositionFixed){
       $el.css({'position': 'absolute', 'top': '35%'}); 
-      $el.css({'left': '33%'}); 
+      $el.css({'left': '30%'}); 
     } 
   });
 
@@ -27,11 +27,11 @@ $(window).scroll(function(e){
     console.log($(this).scrollTop());
     if ($(this).scrollTop() > smallerHeight && !isPositionFixed){ 
       $el.css({'position': 'fixed', 'top': '-20px'}); 
-      $el.css({'right': '25%'}); 
+      $el.css({'right': '20%'}); 
     }
     if ($(this).scrollTop() < smallerHeight && isPositionFixed){
       $el.css({'position': 'absolute', 'top': '35%'}); 
-      $el.css({'right': '33%'}); 
+      $el.css({'right': '30%'}); 
     } 
   });
   
@@ -45,6 +45,39 @@ $(window).scroll(function(e){
     if ($(this).scrollTop() < smallerHeight && isPositionFixed){
       $el.css({'position': 'absolute', 'top': '35%'}); 
 
+    } 
+  });
+
+
+
+  $(window).scroll(function(e){ 
+    var $el = $('.aboutBroke'); 
+    var isPositionFixed = ($el.css('position') == 'fixed');
+    console.log($(this).scrollTop());
+    if ($(this).scrollTop() > smallerHeight && !isPositionFixed){ 
+      $el.css({'position': 'fixed', 'top': '-20px'}); 
+      $el.css({'left': '10%'}); 
+    }
+    if ($(this).scrollTop() < smallerHeight && isPositionFixed){
+      $el.css({'position': 'absolute', 'top': '35%'}); 
+      $el.css({'left': '15%'}); 
+    } 
+  });
+
+
+
+
+  $(window).scroll(function(e){ 
+    var $el = $('.certBroke'); 
+    var isPositionFixed = ($el.css('position') == 'fixed');
+    console.log($(this).scrollTop());
+    if ($(this).scrollTop() > smallerHeight && !isPositionFixed){ 
+      $el.css({'position': 'fixed', 'top': '-20px'}); 
+      $el.css({'right': '10%'}); 
+    }
+    if ($(this).scrollTop() < smallerHeight && isPositionFixed){
+      $el.css({'position': 'absolute', 'top': '35%'}); 
+      $el.css({'right': '15%'}); 
     } 
   });
 

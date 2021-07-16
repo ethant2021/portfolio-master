@@ -14,12 +14,12 @@ $("").ready(function(){
 scale images*/
 $(".TTTbutt").click(function(){
 
-    $("#player").text("it is player 1s turn");
+    $(".gameManager").text("it is player 1s turn");
      if(playerTurn % 2 === 1){
-         $("#player").text("it is player 1s turn");
+         $(".gameManager").text("it is player 1s turn");
      }
      else{
-        $("#player").text("it is player 2s turn");/* WHY TF NO WORK*/
+        $(".gameManager").text("it is player 2s turn");/* WHY TF NO WORK*/
      }
      playerTurn++;
      winCheck();
@@ -37,7 +37,7 @@ $(".RESET").click(function(){
     s8 = 0;
     s9 = 0;
 
-    $("#player").text("game reset");
+    $(".gameManager").text("game reset");
 
     $("#s1").text("");
     $("#s2").text("");
