@@ -335,36 +335,16 @@ margin-left: 25%;
 margin-top: 7.5%;
 }
 #social p{
-  font-size: 3.4vh;
+  font-size: 2.25vw;
   color: black;
+  margin: 0px;
+  padding-left: 40%;
 }
-.git{
-  left: 35%;
-  top: 5%;
-  position: absolute;
-}
-.linked{
-  left: 35%;
-  top: 24%;
-  position: absolute;
-}
-.insta{
-  left: 35%;
-  top: 43%;
-  position: absolute;
-}
-.twitt{
-  left: 37%;
-  top: 60%;
-  position: absolute;
-}
-.resume{
-  left: 35%;
-  top: 80%;
-  position: absolute;
-}
+
 #social img{
   height: 100%;
+  float: left;
+  width: 25%;
 }
 
 .emailBox{
