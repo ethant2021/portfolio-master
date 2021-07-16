@@ -47,12 +47,13 @@ canvas {
     font-size: 4vw;
     transform: scale(1, 1);
     transition: 0.5s ease-in-out;
+    cursor: pointer;
   }
 
   .nav-selections {
     font-size: 2vw;
     color: white;
-
+    cursor: pointer;
     position: absolute;
   }
 
@@ -333,18 +334,28 @@ width: 50%;
 height: 10%;
 margin-left: 25%;
 margin-top: 7.5%;
+border: 0;
+outline: none;
+
 }
 #social p{
   font-size: 2.25vw;
   color: black;
   margin: 0px;
-  padding-left: 40%;
+  padding-left: 25%;
+  border: 0;
+  outline: none;
+}
+#social a{
+  text-decoration: none;
 }
 
 #social img{
   height: 100%;
   float: left;
   width: 25%;
+  border: 0;
+  outline: none;
 }
 
 .emailBox{
